@@ -18,9 +18,9 @@ EPUB
 
 Lié via container.xml
 
-* <metadata> centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
-* <manifest> liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
-* <spine> : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
+* < metadata > centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
+* < manifest > liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
+* < spine > : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
 
 
 

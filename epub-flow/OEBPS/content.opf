@@ -11,7 +11,7 @@
     <dc:identifier id="pub-id">urn:uuid:B9B412F2-CAAD-4A44-B91F-A375068478A0</dc:identifier>
     <meta refines="#pub-id" property="identifier-type" scheme="xsd:string">uuid</meta>
 
-    <dc:title id="title">Démonstration Epub</dc:title>
+    <dc:title id="title">Epub flow</dc:title>
     <meta refines="#title" property="title-type">main</meta>
 
     <dc:language>fr</dc:language>
@@ -20,7 +20,7 @@
     <dc:publisher>Jouve</dc:publisher>
     <dc:creator>Cyril Lamotte</dc:creator>
     <dc:date>2014-04-18T15:00:00Z</dc:date>
-    <dc:description>Quelques exemples des possibilités offertes par HTML5/CSS3 avec le format EPUB.</dc:description>
+    <dc:description>Quelques exemples des possibilités offertes par HTML5/CSS3 avec le format EPUB flow.</dc:description>
 
   </metadata>
 

@@ -1,18 +1,5 @@
 <?xml version="1.0"?>
 
-<!--
-
-  Fichier OPF (Open Packaging Format) [lié via container.xml]
-
-  * <metadata> centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
-  * <manifest> liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
-  * <spine> : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
-
-
-  Documentation : http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-package-documents
-
--->
-
 <package version="3.0"
          xml:lang="fr"
          xmlns="http://www.idpf.org/2007/opf"
@@ -43,22 +30,16 @@
   <manifest>
 
     <!--CSS-->
-    <item media-type="text/css" id="css-1" href="Style/global.css" />
-    <item media-type="text/css" id="css-2" href="Style/style-edito-web.css" />
-    <item media-type="text/css" id="css-3" href="Style/style-edito-epub.css" />
+    <item media-type="text/css" id="css-1" href="Style/style.css" />
 
 
     <!--HTML-->
-    <item media-type="application/xhtml+xml" id="nav" href="Text/nav.html" properties="nav" />
-    <item media-type="application/xhtml+xml" id="html-01" href="Text/intro.html" />
-    <item media-type="application/xhtml+xml" id="html-02" href="Text/edito-web.html" />
-    <item media-type="application/xhtml+xml" id="html-03" href="Text/edito-epub.html" />
+    <item media-type="application/xhtml+xml" id="nav" href="Text/toc.html" properties="nav" />
+    <item media-type="application/xhtml+xml" id="html-intro" href="Text/intro.html" />
+    <item media-type="application/xhtml+xml" id="html-template" href="Text/template.html" />
 
     <!--Images-->
-    <item media-type="image/jpeg" id="img-01" href="Images/bruno-de-laigue.jpg" />
-
-    <!--TOC-->
-    <item media-type="application/x-dtbncx+xml" id="ncx" href="toc.ncx" />
+    <item media-type="image/png" id="img-01" href="Images/1000x300.png" />
 
   </manifest>
 
@@ -66,9 +47,8 @@
 
 
   <spine toc="ncx">
-    <itemref idref="html-01" />
-    <itemref idref="html-02" />
-    <itemref idref="html-03" />
+    <itemref idref="html-intro" />
+    <itemref idref="html-template" />
   </spine>
 
 </package>

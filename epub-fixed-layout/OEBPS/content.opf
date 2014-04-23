@@ -1,18 +1,5 @@
 <?xml version="1.0"?>
 
-<!--
-
-  Fichier OPF (Open Packaging Format) [lié via container.xml]
-
-  * <metadata> centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
-  * <manifest> liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
-  * <spine> : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
-
-
-  Documentation : http://www.idpf.org/epub/30/spec/epub30-publications.html#sec-package-documents
-
--->
-
 <package version="3.0"
          xml:lang="fr"
          xmlns="http://www.idpf.org/2007/opf"
@@ -21,7 +8,7 @@
 
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-    <dc:identifier id="pub-id">urn:uuid:B9B412F2-CAAD-4A44-B91F-A375068478A0</dc:identifier>
+    <dc:identifier id="pub-id">urn:uuid:B9B412F2-CAAD-4A44-B91F-A375068478A1</dc:identifier>
     <meta refines="#pub-id" property="identifier-type" scheme="xsd:string">uuid</meta>
 
     <dc:title id="title">Epub Fixed Layout</dc:title>
@@ -35,6 +22,15 @@
     <dc:date>2014-04-18T15:00:00Z</dc:date>
     <dc:description>Quelques exemples des possibilités offertes par HTML5/CSS3 avec le format EPUB.</dc:description>
 
+
+    <meta property="ibooks:version">3.0</meta>
+    <meta property="rendition:layout">pre-paginated</meta>
+    <meta property="rendition:spread">landscape</meta>
+    <meta property="rendition:orientation">landscape</meta>
+    <meta property="ibooks:binding">false</meta>
+    <meta property="rendition:viewport">width=1024, height=768</meta>
+
+
   </metadata>
 
 
@@ -43,7 +39,7 @@
   <manifest>
 
     <!--CSS-->
-    <item media-type="text/css" id="css-1" href="Style/global.css" />
+    <item media-type="text/css" id="css-1" href="Style/style.css" />
 
     <!--HTML-->
     <item media-type="application/xhtml+xml" id="nav" href="Text/toc.html" properties="nav" />
@@ -59,7 +55,6 @@
 
 
   <spine>
-    <itemref idref="img-01" />
     <itemref idref="html-01" />
   </spine>
 

@@ -32,11 +32,16 @@
     <!--CSS-->
     <item media-type="text/css" id="css-1" href="Style/style.css" />
 
+    <!--JS-->
+    <item media-type="application/javascript" id="js-ibooks" href="Scripts/ibooks.js" />
+    <item media-type="application/javascript" id="js-1" href="Scripts/dom-ready.js" />
+
 
     <!--HTML-->
     <item media-type="application/xhtml+xml" id="nav" href="Text/toc.html" properties="nav" />
     <item media-type="application/xhtml+xml" id="html-intro" href="Text/intro.html" />
     <item media-type="application/xhtml+xml" id="html-template" href="Text/template.html" />
+    <item media-type="application/xhtml+xml" id="html-non-linear-content" href="Text/non-linear-content.html" />
 
     <!--Images-->
     <item media-type="image/png" id="img-01" href="Images/1000x300.png" />
@@ -49,6 +54,7 @@
   <spine toc="ncx">
     <itemref idref="html-intro" />
     <itemref idref="html-template" />
+    <itemref idref="html-non-linear-content" linear="no" />
   </spine>
 
 </package>

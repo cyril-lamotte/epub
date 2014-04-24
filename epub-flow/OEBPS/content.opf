@@ -11,7 +11,7 @@
     <dc:identifier id="pub-id">urn:uuid:B9B412F2-CAAD-4A44-B91F-A375068478A0</dc:identifier>
     <meta refines="#pub-id" property="identifier-type" scheme="xsd:string">uuid</meta>
 
-    <dc:title id="title">Epub flow</dc:title>
+    <dc:title id="title">Epub en mode flow</dc:title>
     <meta refines="#title" property="title-type">main</meta>
 
     <dc:language>fr</dc:language>
@@ -34,14 +34,15 @@
 
     <!--JS-->
     <item media-type="application/javascript" id="js-ibooks" href="Scripts/ibooks.js" />
-    <item media-type="application/javascript" id="js-1" href="Scripts/dom-ready.js" />
+    <item media-type="application/javascript" id="js-1" href="Scripts/domready.js" />
 
 
     <!--HTML-->
     <item media-type="application/xhtml+xml" id="nav" href="Text/toc.html" properties="nav" />
     <item media-type="application/xhtml+xml" id="html-intro" href="Text/intro.html" />
-    <item media-type="application/xhtml+xml" id="html-template" href="Text/template.html" />
+    <item media-type="application/xhtml+xml" id="html-template" properties="scripted" href="Text/template.html" />
     <item media-type="application/xhtml+xml" id="html-non-linear-content" href="Text/non-linear-content.html" />
+    <item media-type="application/xhtml+xml" id="html-css3" properties="scripted" href="Text/css3.html" />
 
     <!--Images-->
     <item media-type="image/png" id="img-01" href="Images/1000x300.png" />
@@ -55,6 +56,7 @@
     <itemref idref="html-intro" />
     <itemref idref="html-template" />
     <itemref idref="html-non-linear-content" linear="no" />
+    <itemref idref="html-css3" />
   </spine>
 
 </package>

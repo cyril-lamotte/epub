@@ -1,28 +1,126 @@
 
+/* -----------------------------------------------------------------------------
+   Helpers
+----------------------------------------------------------------------------- */
+
+.center    { margin-left: auto; margin-right: auto; }
+.txtleft   { text-align: left; }
+.txtright  { text-align: right; }
+.txtcenter { text-align: center; }
+
+.valign-top    { vertical-align: top !important; }
+.valign-middle { vertical-align: middle !important; }
+.valign-bottom { vertical-align: bottom !important; }
+
+.pull-left  { float: left; }
+.pull-right { float: right; }
+
+
+/* -----------------------------------------------------------------------------
+   Links
+----------------------------------------------------------------------------- */
+
+a:link {
+  color: #6392F0;
+  text-decoration: underline;
+}
+
+  a:link span {
+    color: #6392F0;
+  }
+
+a:visited {
+  color: #F06386;
+}
+
+  a:visited span {
+    color: #F06386;
+  }
+
 
 /* -----------------------------------------------------------------------------
    Images
 ----------------------------------------------------------------------------- */
 
 .image-container {
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
-	img { width: 100%; }
+  img { width: 100%; }
 
+
+
+/* -----------------------------------------------------------------------------
+   Tags
+----------------------------------------------------------------------------- */
+
+code {
+  background: #f5f5f5;
+  padding: 1em;
+  border-left: 4px solid #333;
+  margin: 1em 0;
+  display: block;
+}
+
+pre {
+  margin: 0;
+}
 
 
 /* -----------------------------------------------------------------------------
    Titles
 ----------------------------------------------------------------------------- */
 
-.chapter-title {}
-
-.section-title {
-
+.chapter-title {
+  font-size: 1.5em;
+  position: relative;
+  padding-bottom: 10px;
+  color: #6392F0;
 }
 
+.chapter-title:after {
+  content: '';
+  display: block;
+  width: 10em;
+  height: 2px;
+  background-color: #6392F0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+.section-title {
+  margin: 3em 0 1em 1em;
+  font-size: 1em;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 8em;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+h3 {
+  font-size: 0.8em;
+  font-family: sans-serif;
+  font-style: italic;
+  border-left: 4px solid #f1f1f1;
+  padding-left: 0.5em;
+  margin-left: 2em;
+}
 
 
 /* -----------------------------------------------------------------------------
@@ -30,18 +128,18 @@
 ----------------------------------------------------------------------------- */
 
 .template-drag {
-	width: 100px;
-	height: 100px;
-	background: #F5F5F5;
-	border: 4px dashed #6392F0;
-	opacity: 0.5;
-	border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background: #F5F5F5;
+  border: 4px dashed #6392F0;
+  opacity: 0.5;
+  border-radius: 100%;
 }
 
 
 .ibooks-element-is-dragging .template-drag {
-	border-color: #6EC45C;
-	border-style: solid;
+  border-color: #6EC45C;
+  border-style: solid;
 }
 
 
@@ -51,17 +149,17 @@
 ----------------------------------------------------------------------------- */
 
 .template-touch {
-	width: 100px;
-	height: 100px;
-	background: #F5F5F5;
-	border: 4px dashed #F06863;
-	opacity: 0.5;
-	border-radius: 100%;
+  width: 5em;
+  height: 5em;
+  background: #F5F5F5;
+  border: 4px dashed #F06863;
+  opacity: 0.5;
+  border-radius: 100%;
 }
 
 .template-touch.active {
-	border-color: #6EC45C;
-	border-style: solid;
+  border-color: #6EC45C;
+  border-style: solid;
 }
 
 
@@ -73,20 +171,58 @@
 ----------------------------------------------------------------------------- */
 
 .table {
-	border: 1px solid #6392F0;
-	border-collapse: collapse;
+  border: 1px solid #6392F0;
+  border-collapse: collapse;
+  margin: 1em auto;
 }
 
-.table td,
-.table th {
-	border: 1px solid #6392F0;
-	padding: 0.5em;
+  .table caption {
+    font-style: italic;
+  }
+
+  .table td,
+  .table th {
+    border: 1px solid #6392F0;
+    padding: 0.5em;
+    vertical-align: top;
+  }
+
+  .table th {
+    background-color: #6392F0;
+    border-right-color: #fff;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .table th:last-child {
+    border-right-color: inherit;
+  }
+
+  .table tbody tr:nth-child(even) td {
+    background-color: #f5f5f5;
+  }
+
+
+
+
+
+/* -----------------------------------------------------------------------------
+   Style de texte
+----------------------------------------------------------------------------- */
+
+.first-line:first-line {
+  font-weight: bold;
+  color: green;
 }
 
-
-.table th {
-	background-color: #6392F0;
-	border-color: #fff;
-	color: #fff;
-	font-weight: bold;
+.first-letter:first-letter {
+  font-weight: bold;
+  float: left;
+  font-size: 2em;
+  border: 1px solid #000;
+  width: 1.5em;
+  height: 1.2em;
+  text-align: center;
+  margin: 0 0.2em 0 0;
+  border-radius: 5px;
 }

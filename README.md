@@ -19,9 +19,9 @@ EPUB
 
 Lié via container.xml
 
-* '&lt;metadata&gt;' : centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
-* '&lt;manifest&gt;' : liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
-* '&lt;spine&gt;' : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
+* `&lt;metadata&gt;` : centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
+* `&lt;manifest&gt;` : liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
+* `&lt;spine&gt;` : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
 
 
 #### Fixed layout
@@ -56,7 +56,7 @@ Dans chaque fichier HTML, indiquer les dimensions du viewport :
 <meta name="viewport" content="width=500, height=500" />
 ```
 
-Et indiquer les mêmes dimensions sur le 'body' dans le CSS.
+Et indiquer les mêmes dimensions sur le `body` dans le CSS.
 
 ```css
 body {

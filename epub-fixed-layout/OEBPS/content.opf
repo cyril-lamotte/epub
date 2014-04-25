@@ -3,6 +3,7 @@
 <package version="3.0"
          xml:lang="fr"
          xmlns="http://www.idpf.org/2007/opf"
+         prefix="rendition: http://www.idpf.org/vocab/rendition/#"
          unique-identifier="pub-id">
 
 
@@ -24,11 +25,12 @@
 
 
     <meta property="ibooks:version">3.0</meta>
-    <meta property="rendition:layout">pre-paginated</meta>
-    <meta property="rendition:spread">landscape</meta>
-    <meta property="rendition:orientation">landscape</meta>
     <meta property="ibooks:binding">false</meta>
-    <meta property="rendition:viewport">width=1024, height=768</meta>
+
+    <meta property="rendition:layout">pre-paginated</meta>
+    <meta property="rendition:spread">auto</meta>
+    <meta property="rendition:orientation">auto</meta>
+    <meta property="rendition:viewport">width=500, height=500</meta>
 
 
   </metadata>

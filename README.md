@@ -5,7 +5,7 @@ EPUB
 ## Documentation
 
 * [Specifications](http://idpf.org/epub/301)
-* [Specifications des publication](http://www.idpf.org/epub/301/spec/epub-publications.html)
+* [Specifications des publications](http://www.idpf.org/epub/301/spec/epub-publications.html)
 * [Specifications du conteneur EPUB](http://www.idpf.org/epub/301/spec/epub-ocf.html) &mdash; [Exemple de structure](http://www.idpf.org/epub/301/spec/epub-ocf.html#example)
 * [EPUB Validator](http://validator.idpf.org)
 * [iBooks Asset Guide 5.1 Revision 2](https://itunesconnect.apple.com/docs/iBooksAssetGuide5.1Revision2.pdf)
@@ -19,13 +19,34 @@ EPUB
 
 Lié via container.xml
 
-* < metadata > : centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
-* < manifest > : liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
-* < spine > : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
+* &lt;metadata&gt; : centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
+* &lt;manifest&gt; : liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
+* &lt;spine&gt; : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
 
 
+#### Fixed layout
 
+Notation EPUB3, ignorée par iBooks.
 
+```html
+  <meta property="rendition:layout">pre-paginated</meta>
+  <meta property="rendition:spread">auto</meta>
+  <meta property="rendition:orientation">auto</meta>
+  <meta property="rendition:viewport">width=500, height=500</meta>
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<display_options>
+  <platform name="*">
+    <option name="fixed-layout">true</option>
+    <option name="open-to-spread">true</option>
+    <option name="interactive">true</option>
+    <option name="specified-fonts">true</option>
+    <option name="orientation-lock">none</option>
+  </platform>
+</display_options>
+```
 
 
 ## Fonctionnalités EPUB
@@ -34,7 +55,6 @@ Lié via container.xml
 
 ```html
 <a href="chapter.xhtml#note-01" epub:type="noteref">EPUB</a>
-
 <aside id="note-01" epub:type="footnote">Electronic Publication</aside>
 ```
 

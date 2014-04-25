@@ -5,6 +5,6 @@
     <option name="open-to-spread">true</option>
     <option name="interactive">true</option>
     <option name="specified-fonts">true</option>
-    <option name="orientation-lock">landscape-only</option>
+    <option name="orientation-lock">none</option>
   </platform>
 </display_options>

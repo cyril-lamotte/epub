@@ -75,7 +75,7 @@ body {
 <aside id="note-01" epub:type="footnote">Electronic Publication</aside>
 ```
 
-> *Note&nbsp;:* L'utilisation des attribut "epub:type" nécessite l'inclusion du _namespace_ epub sur la balise _html_ :
+> *Note&nbsp;:* L'utilisation des attributs "epub:type" nécessite l'inclusion du _namespace_ epub sur la balise _html_ :
 
 ```html
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">

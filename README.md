@@ -19,21 +19,23 @@ EPUB
 
 Lié via container.xml
 
-* &lt;metadata&gt; : centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
-* &lt;manifest&gt; : liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
-* &lt;spine&gt; : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
+* '&lt;metadata&gt;' : centralise les métadonnées de la publication (Auteur, éditeur, ISBN...)
+* '&lt;manifest&gt;' : liste exhaustive des fichiers composant la publication (html, css, images, table des matières...)
+* '&lt;spine&gt;' : "Colonne vertébrale", liste d'ID définissant l'ordre des contenus
 
 
 #### Fixed layout
 
-Notation EPUB3, ignorée par iBooks.
+Notation EPUB3 à insérer dans '&lt;metadata&gt;' (ignorée par iBooks) :
 
-```html
+```xml
   <meta property="rendition:layout">pre-paginated</meta>
   <meta property="rendition:spread">auto</meta>
   <meta property="rendition:orientation">auto</meta>
   <meta property="rendition:viewport">width=500, height=500</meta>
 ```
+
+Pour iBooks ou les anciennes versions, ajouter le fichier _com.apple.ibooks.display-options.xml_ dans le dossier _META-INF_.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -48,6 +50,21 @@ Notation EPUB3, ignorée par iBooks.
 </display_options>
 ```
 
+Dans chaque fichier HTML, indiquer les dimensions du viewport :
+
+```xml
+<meta name="viewport" content="width=500, height=500" />
+```
+
+Et indiquer les mêmes dimensions sur le 'body' dans le CSS.
+
+```css
+body {
+  width: 500px;
+  height: 500px;
+  margin: 0;
+}
+```
 
 ## Fonctionnalités EPUB
 

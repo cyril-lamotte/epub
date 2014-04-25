@@ -26,7 +26,7 @@ Lié via container.xml
 
 #### Fixed layout
 
-Notation EPUB3 à insérer dans '&lt;metadata&gt;' (ignorée par iBooks) :
+Notation EPUB3 à insérer dans `<metadata>` (ignorée par iBooks) :
 
 ```xml
   <meta property="rendition:layout">pre-paginated</meta>

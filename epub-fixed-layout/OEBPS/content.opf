@@ -12,7 +12,7 @@
     <dc:identifier id="pub-id">urn:uuid:B9B412F2-CAAD-4A44-B91F-A375068478A1</dc:identifier>
     <meta refines="#pub-id" property="identifier-type" scheme="xsd:string">uuid</meta>
 
-    <dc:title id="title">Epub Fixed Layout</dc:title>
+    <dc:title id="title">Epub en mode fixed layout</dc:title>
     <meta refines="#title" property="title-type">main</meta>
 
     <dc:language>fr</dc:language>

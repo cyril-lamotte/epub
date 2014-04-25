@@ -120,6 +120,7 @@ h3 {
   border-left: 4px solid #f1f1f1;
   padding-left: 0.5em;
   margin-left: 2em;
+  margin-top: 3em;
 }
 
 
@@ -207,7 +208,7 @@ h3 {
 
 
 /* -----------------------------------------------------------------------------
-   Style de texte
+   Styles de texte
 ----------------------------------------------------------------------------- */
 
 .first-line:first-line {
@@ -219,6 +220,7 @@ h3 {
   font-weight: bold;
   float: left;
   font-size: 2em;
+  line-height: 1.2;
   border: 1px solid #000;
   width: 1.5em;
   height: 1.2em;
@@ -226,3 +228,47 @@ h3 {
   margin: 0 0.2em 0 0;
   border-radius: 5px;
 }
+
+
+
+
+/* -----------------------------------------------------------------------------
+   Styles de bloc
+----------------------------------------------------------------------------- */
+
+.bloc-demo {
+  padding: 1em;
+  margin: 1em auto;
+  width: 50%;
+}
+
+.css3-shadow {
+  box-shadow: 1px 1px 5px #000;
+}
+
+.css3-radius {
+  border-radius: 5px;
+}
+
+.css3-content {
+  position: relative;
+  background: lightblue;
+}
+
+  .css3-content:before {
+    content: '>';
+    display: inline;
+    margin-right: 3px;
+  }
+
+  .css3-content:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin-right: 3px;
+  }

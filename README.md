@@ -26,28 +26,13 @@ Lié via container.xml
 
 #### Fixed layout
 
-Notation EPUB3 à insérer dans `<metadata>` (ignorée par iBooks) :
+Notation EPUB3 à insérer dans `<metadata>` :
 
 ```xml
   <meta property="rendition:layout">pre-paginated</meta>
   <meta property="rendition:spread">auto</meta>
   <meta property="rendition:orientation">auto</meta>
   <meta property="rendition:viewport">width=500, height=500</meta>
-```
-
-Pour iBooks ou les anciennes versions, ajouter le fichier _com.apple.ibooks.display-options.xml_ dans le dossier _META-INF_.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<display_options>
-  <platform name="*">
-    <option name="fixed-layout">true</option>
-    <option name="open-to-spread">true</option>
-    <option name="interactive">true</option>
-    <option name="specified-fonts">true</option>
-    <option name="orientation-lock">none</option>
-  </platform>
-</display_options>
 ```
 
 Dans chaque fichier HTML, indiquer les dimensions du viewport :

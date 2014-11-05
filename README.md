@@ -41,15 +41,7 @@ Dans chaque fichier HTML, indiquer les dimensions du viewport :
 <meta name="viewport" content="width=500, height=500" />
 ```
 
-Et indiquer les mêmes dimensions sur le `body` dans le CSS.
 
-```css
-body {
-  width: 500px;
-  height: 500px;
-  margin: 0;
-}
-```
 
 ## Fonctionnalités EPUB
 
@@ -91,6 +83,30 @@ img { width: 100%; }
 ```
 
 
+## XHTML
+
+Les entités HTML comme `&nbsp;` ne peuvent pas être utlisées. EPUB est basé sur XHTML qui ne définit pas ces entités. Les entités XHTML (Numériques) sont utlisables :
+
+```
+prime -> #824
+Prime -> #8243
+ldquo -> #8220
+rdquo -> #8221
+lsquo -> #8216
+rsquo -> #8217
+mdash -> #8212
+ndash ->#8211
+copy -> #169
+trade -> #8482
+deg -> #176
+aacute -> #225
+eacute -> #233
+oacute -> #243
+ntilde -> #241
+iuml -> #239
+ecirc -> #234
+nbsp -> #160
+```
 
 
 ## JavaScript

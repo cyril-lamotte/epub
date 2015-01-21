@@ -11,8 +11,6 @@ EPUB
 * [iBooks Asset Guide 5.1 Revision 2](https://itunesconnect.apple.com/docs/iBooksAssetGuide5.1Revision2.pdf)
 
 
-
-
 ## Conteneur EPUB
 
 ### Fichier OPF (Open Packaging Format)
@@ -115,6 +113,15 @@ nbsp -> #160
 * Utiliser les transformations 3D en CSS à la place du positionnement top/right/bottom/left.
 Les animations seront plus douces parce qu'elle disposent d'une accélération matérielle.
 * Utiliser `preventDefault` pour éviter de déclencher l'affichage des menus.
+
+
+## Valider un epub avec epubcheck
+
+> Télécharger le jar : https://github.com/IDPF/epubcheck
+
+```
+C:> java -jar D:\epubcheck-3.0.1\epubcheck-3.0.1.jar L:\epub-to-validate.epub
+```
 
 
 

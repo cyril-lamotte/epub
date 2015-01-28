@@ -115,6 +115,17 @@ Les animations seront plus douces parce qu'elle disposent d'une accélération m
 * Utiliser `preventDefault` pour éviter de déclencher l'affichage des menus.
 
 
+
+
+## Générer un epub
+
+> Le fichier mimetype doit être le premier de l'archive et ne doit pas être compressé.
+
+```
+zip -Xr9D filename.epub mimetype META-INF OEBPS
+```
+
+
 ## Valider un epub avec epubcheck
 
 > Télécharger le jar : https://github.com/IDPF/epubcheck
